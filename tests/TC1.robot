@@ -34,7 +34,7 @@ TC1
     click Element  //*[contains(text(), "entre le")]
     click Element  //*[contains(text(), "Different de")]
     click Element  //span[contains(@class, "k-i-calendar")]
-    input text  //input[@value="18/10/2022"]  20/10/2022
+    input text  //input[@value="25/10/2022"]  20/10/2022
     click Element  //*[@id="rechercher"]
     
     
