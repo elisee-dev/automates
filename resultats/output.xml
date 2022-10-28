@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.8 on win32)" generated="20221027 11:26:18.891" rpa="false" schemaversion="3">
+<suite id="s1" name="Client" source="C:\Users\Elisée Konan\Desktop\Robot\AutomateTests\automates\tests\client.robot">
+<test id="s1-t1" name="Création du client" line="59">
+<kw name="Authentification" library="authentification" type="SETUP">
+<arg>somei</arg>
+<arg>Test123*</arg>
+<doc>Cette fonction permet de se connecter à Waterp Web</doc>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Le test a démarré</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221027 11:26:19.086" endtime="20221027 11:26:19.086"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://wrp-mrc-nightly.somei.fr/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221027 11:26:19.087" level="INFO">Opening browser 'chrome' to base url 'https://wrp-mrc-nightly.somei.fr/'.</msg>
+<status status="PASS" starttime="20221027 11:26:19.087" endtime="20221027 11:26:21.736"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221027 11:26:21.736" endtime="20221027 11:26:21.857"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id="username"]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221027 11:26:21.858" level="INFO">Typing text 'somei' into text field '//input[@id="username"]'.</msg>
+<status status="PASS" starttime="20221027 11:26:21.857" endtime="20221027 11:26:21.953"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id=password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221027 11:26:21.953" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg timestamp="20221027 11:26:21.990" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221027 11:26:22.037" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221027 11:26:21.953" endtime="20221027 11:26:22.037"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@class="waves-effect waves-light btn btn-somei ng-binding"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221027 11:26:22.038" level="INFO">Clicking element '//button[@class="waves-effect waves-light btn btn-somei ng-binding"]'.</msg>
+<status status="PASS" starttime="20221027 11:26:22.038" endtime="20221027 11:26:24.403"/>
+</kw>
+<status status="PASS" starttime="20221027 11:26:19.086" endtime="20221027 11:26:24.403"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="clientèle"]/a/i[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221027 11:26:24.403" level="INFO">Clicking element '//*[@id="clientèle"]/a/i[2]'.</msg>
+<status status="PASS" starttime="20221027 11:26:24.403" endtime="20221027 11:26:24.449"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="clientèleContent"]/li[1]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221027 11:26:24.449" level="INFO">Clicking element '//*[@id="clientèleContent"]/li[1]/a'.</msg>
+<status status="PASS" starttime="20221027 11:26:24.449" endtime="20221027 11:26:25.325"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//i[contains(@class, "fa-user-plus")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221027 11:26:25.326" level="INFO">Clicking element '//i[contains(@class, "fa-user-plus")]'.</msg>
+<status status="PASS" starttime="20221027 11:26:25.326" endtime="20221027 11:26:25.905"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="numeroclientregroupant"]</arg>
+<arg>${numClientRegroupant}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221027 11:26:25.906" level="INFO">Typing text '' into text field '//*[@id="numeroclientregroupant"]'.</msg>
+<status status="PASS" starttime="20221027 11:26:25.906" endtime="20221027 11:26:25.976"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>id=titreclient</arg>
+<arg>${civilite}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20221027 11:26:25.976" level="INFO">Selecting options from selection list 'id=titreclient' by value MR.</msg>
+<status status="PASS" starttime="20221027 11:26:25.976" endtime="20221027 11:26:26.041"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="raisonsociale"]</arg>
+<arg>${nom}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221027 11:26:26.043" level="INFO">Typing text 'Oumar' into text field '//*[@id="raisonsociale"]'.</msg>
+<status status="PASS" starttime="20221027 11:26:26.043" endtime="20221027 11:26:26.131"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="prenom"]</arg>
+<arg>${prenom}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221027 11:26:26.132" level="INFO">Typing text 'Moustapha' into text field '//*[@id="prenom"]'.</msg>
+<status status="PASS" starttime="20221027 11:26:26.132" endtime="20221027 11:26:26.223"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="idDateNaissance"]</arg>
+<arg>${dtNaiss}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221027 11:26:26.224" level="INFO">Typing text '25/10/1989' into text field '//*[@id="idDateNaissance"]'.</msg>
+<status status="PASS" starttime="20221027 11:26:26.224" endtime="20221027 11:26:26.314"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="lieunaissance"]</arg>
+<arg>${lieuNaiss}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221027 11:26:26.315" level="INFO">Typing text 'RABAT' into text field '//*[@id="lieunaissance"]'.</msg>
+<status status="PASS" starttime="20221027 11:26:26.315" endtime="20221027 11:26:26.405"/>
+</kw>
+<if>
+<branch type="IF" condition="${inactif}==&quot;false&quot;">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="inactif"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221027 11:26:26.407" level="INFO">Clicking element '//*[@id="inactif"]'.</msg>
+<status status="PASS" starttime="20221027 11:26:26.407" endtime="20221027 11:26:26.449"/>
+</kw>
+<status status="PASS" starttime="20221027 11:26:26.407" endtime="20221027 11:26:26.449"/>
+</branch>
+<status status="PASS" starttime="20221027 11:26:26.407" endtime="20221027 11:26:26.449"/>
+</if>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="complement"]</arg>
+<arg>${complement}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221027 11:26:26.450" level="INFO">Typing text '' into text field '//*[@id="complement"]'.</msg>
+<status status="PASS" starttime="20221027 11:26:26.450" endtime="20221027 11:26:26.518"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@name="adressepostaleadresse"]</arg>
+<arg>${voie}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221027 11:26:26.519" level="INFO">Typing text '' into text field '//input[@name="adressepostaleadresse"]'.</msg>
+<status status="PASS" starttime="20221027 11:26:26.519" endtime="20221027 11:26:26.591"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="codepostal"]</arg>
+<arg>${codePostal}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221027 11:26:26.591" level="INFO">Typing text '' into text field '//*[@id="codepostal"]'.</msg>
+<status status="PASS" starttime="20221027 11:26:26.591" endtime="20221027 11:26:26.659"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>id=ville</arg>
+<arg>${ville}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20221027 11:26:26.660" level="INFO">Selecting options from selection list 'id=ville' by value RABAT.</msg>
+<msg timestamp="20221027 11:26:26.808" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-17.png"&gt;&lt;img src="selenium-screenshot-17.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221027 11:26:26.809" level="FAIL">List with locator 'id=ville' not found.</msg>
+<status status="FAIL" starttime="20221027 11:26:26.659" endtime="20221027 11:26:26.810"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>id=pays</arg>
+<arg>${pays}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221027 11:26:26.811" endtime="20221027 11:26:26.811"/>
+</kw>
+<tag>Création client</tag>
+<status status="FAIL" starttime="20221027 11:26:19.084" endtime="20221027 11:26:26.811">List with locator 'id=ville' not found.</status>
+</test>
+<status status="FAIL" starttime="20221027 11:26:18.891" endtime="20221027 11:26:26.812"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Création client</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Client">Client</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
